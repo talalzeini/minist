@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum FilterType: Equatable {
-    case all, completed, notCompleted
+    case all, completed, notCompleted, today, yesterday
 }
 
 struct FilterMenuView: View {
@@ -17,19 +17,19 @@ struct FilterMenuView: View {
 
     var body: some View {
         Menu {
-            Button(action: {
-                filter = .all
-            }) {
+            Button(action: { filter = .all }) {
                 Label("All", systemImage: filter == .all ? "checkmark.circle.fill" : "")
             }
-            Button(action: {
-                filter = .completed
-            }) {
+            Button(action: { filter = .today }) {
+                Label("Today", systemImage: filter == .today ? "checkmark.circle.fill" : "")
+            }
+            Button(action: { filter = .yesterday }) {
+                Label("Yesterday", systemImage: filter == .yesterday ? "checkmark.circle.fill" : "")
+            }
+            Button(action: { filter = .completed }) {
                 Label("Completed", systemImage: filter == .completed ? "checkmark.circle.fill" : "")
             }
-            Button(action: {
-                filter = .notCompleted
-            }) {
+            Button(action: { filter = .notCompleted }) {
                 Label("Uncompleted", systemImage: filter == .notCompleted ? "checkmark.circle.fill" : "")
             }
         } label: {

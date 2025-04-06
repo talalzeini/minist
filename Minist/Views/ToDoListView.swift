@@ -14,10 +14,18 @@ struct ToDoListView: View {
     @AppStorage("isDarkMode") private var isDarkMode: Bool = false
     
     private var filteredTasks: [Task] {
+        let calendar = Calendar.current
         switch filter {
-        case .completed: return viewModel.tasks.filter { $0.isCompleted }
-        case .notCompleted: return viewModel.tasks.filter { !$0.isCompleted }
-        case .all: return viewModel.tasks
+        case .completed:
+            return viewModel.tasks.filter { $0.isCompleted }
+        case .notCompleted:
+            return viewModel.tasks.filter { !$0.isCompleted }
+        case .today:
+            return viewModel.tasks.filter { calendar.isDateInToday($0.dateCreated) }
+        case .yesterday:
+            return viewModel.tasks.filter { calendar.isDateInYesterday($0.dateCreated) }
+        case .all:
+            return viewModel.tasks
         }
     }
 
@@ -26,9 +34,11 @@ struct ToDoListView: View {
         case .all: return "Tasks"
         case .completed: return "Completed Tasks"
         case .notCompleted: return "Uncompleted Tasks"
+        case .today: return "Today's Tasks"
+        case .yesterday: return "Yesterday's Tasks"
         }
     }
-    
+
     var body: some View {
         NavigationView {
             ScrollViewReader { proxy in

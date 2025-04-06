@@ -21,13 +21,22 @@ class ToDoListViewModel: ObservableObject {
     }
 
     func completeTask(at index: Int) {
-        tasks[index].isCompleted.toggle()
+        var task = tasks[index]
+        task.isCompleted.toggle()
+
+        if task.isCompleted {
+            task.dateCompleted = Date()
+        } else {
+            task.dateCompleted = nil
+        }
+
+        tasks[index] = task
         saveTasks()
     }
 
     func addTask(isCompleted: Bool) {
         guard !newTaskTitle.isEmpty else { return }
-        let newTask = Task(title: newTaskTitle, dateCreated: Date.now, isCompleted: isCompleted)
+        let newTask = Task(title: newTaskTitle, dateCreated: Date.now, isCompleted: isCompleted, dateCompleted: nil)
         tasks.append(newTask)
         newTaskTitle = ""
         saveTasks()
