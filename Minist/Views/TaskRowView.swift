@@ -11,7 +11,7 @@ struct TaskRowView: View {
     let task: Task
     @ObservedObject var viewModel: ToDoListViewModel
     @Binding var scrollToTop: Bool
-
+    
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
@@ -31,7 +31,7 @@ struct TaskRowView: View {
                 }
             }
             Spacer()
-
+            
             Image(systemName: task.isCompleted ? "checkmark.circle.fill" : "circle")
                 .font(.system(size: 25))
                 .onTapGesture {

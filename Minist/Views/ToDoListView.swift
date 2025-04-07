@@ -28,7 +28,7 @@ struct ToDoListView: View {
             return viewModel.tasks
         }
     }
-
+    
     private var navigationBarTitle: String {
         switch filter {
         case .all: return "Tasks"
@@ -38,7 +38,7 @@ struct ToDoListView: View {
         case .yesterday: return "Yesterday's Tasks"
         }
     }
-
+    
     var body: some View {
         NavigationView {
             ScrollViewReader { proxy in

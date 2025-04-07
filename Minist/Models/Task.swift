@@ -13,11 +13,13 @@ struct Task: Hashable, Identifiable, Codable, Equatable {
     var isCompleted: Bool
     var dateCreated: Date
     var dateCompleted: Date? = nil
-
-    init(title: String, dateCreated: Date, isCompleted: Bool, dateCompleted: Date?) {
+    var isPinned: Bool = false
+    
+    init(title: String, dateCreated: Date, isCompleted: Bool, dateCompleted: Date?, isPinned: Bool) {
         self.title = title
         self.dateCreated = dateCreated
         self.isCompleted = isCompleted
         self.dateCompleted = dateCompleted
+        self.isPinned = isPinned
     }
 }

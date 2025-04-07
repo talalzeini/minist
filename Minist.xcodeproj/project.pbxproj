@@ -10,6 +10,14 @@
 		F01E19EB2D62E1A400477213 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01E19EA2D62E1A400477213 /* TaskListView.swift */; };
 		F01E19ED2D62E1B700477213 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01E19EC2D62E1B700477213 /* TaskRowView.swift */; };
 		F01E19EF2D62E1CC00477213 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01E19EE2D62E1CC00477213 /* EmptyStateView.swift */; };
+		F04A95032DA3231A00FDFEC0 /* HabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04A95022DA3231A00FDFEC0 /* HabitsViewModel.swift */; };
+		F04A95052DA3236C00FDFEC0 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04A95042DA3236C00FDFEC0 /* Habit.swift */; };
+		F04A95072DA3247A00FDFEC0 /* HabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04A95062DA3247A00FDFEC0 /* HabitsView.swift */; };
+		F04A95092DA32D5700FDFEC0 /* HabitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04A95082DA32D5700FDFEC0 /* HabitRowView.swift */; };
+		F04A950B2DA32D6900FDFEC0 /* HabitsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04A950A2DA32D6900FDFEC0 /* HabitsListView.swift */; };
+		F04A950E2DA32D8C00FDFEC0 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04A950D2DA32D8C00FDFEC0 /* ProgressView.swift */; };
+		F04A95112DA345BD00FDFEC0 /* CircularIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04A95102DA345BD00FDFEC0 /* CircularIndicatorView.swift */; };
+		F04A95132DA345F300FDFEC0 /* StatsRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04A95122DA345F300FDFEC0 /* StatsRectangleView.swift */; };
 		F073272F2C8505A2006E30A8 /* MinistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F073272E2C8505A2006E30A8 /* MinistApp.swift */; };
 		F07327312C8505A3006E30A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F07327302C8505A3006E30A8 /* Assets.xcassets */; };
 		F07327342C8505A3006E30A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F07327332C8505A3006E30A8 /* Preview Assets.xcassets */; };
@@ -25,6 +33,14 @@
 		F01E19EA2D62E1A400477213 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		F01E19EC2D62E1B700477213 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
 		F01E19EE2D62E1CC00477213 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		F04A95022DA3231A00FDFEC0 /* HabitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewModel.swift; sourceTree = "<group>"; };
+		F04A95042DA3236C00FDFEC0 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		F04A95062DA3247A00FDFEC0 /* HabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsView.swift; sourceTree = "<group>"; };
+		F04A95082DA32D5700FDFEC0 /* HabitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitRowView.swift; sourceTree = "<group>"; };
+		F04A950A2DA32D6900FDFEC0 /* HabitsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsListView.swift; sourceTree = "<group>"; };
+		F04A950D2DA32D8C00FDFEC0 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		F04A95102DA345BD00FDFEC0 /* CircularIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularIndicatorView.swift; sourceTree = "<group>"; };
+		F04A95122DA345F300FDFEC0 /* StatsRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsRectangleView.swift; sourceTree = "<group>"; };
 		F07327292C8505A2006E30A8 /* Minist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F073272E2C8505A2006E30A8 /* MinistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistApp.swift; sourceTree = "<group>"; };
 		F07327302C8505A3006E30A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +64,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F04A950C2DA32D7100FDFEC0 /* Habits */ = {
+			isa = PBXGroup;
+			children = (
+				F04A95062DA3247A00FDFEC0 /* HabitsView.swift */,
+				F04A95082DA32D5700FDFEC0 /* HabitRowView.swift */,
+				F04A950A2DA32D6900FDFEC0 /* HabitsListView.swift */,
+			);
+			path = Habits;
+			sourceTree = "<group>";
+		};
+		F04A950F2DA345A200FDFEC0 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				F04A950D2DA32D8C00FDFEC0 /* ProgressView.swift */,
+				F04A95102DA345BD00FDFEC0 /* CircularIndicatorView.swift */,
+				F04A95122DA345F300FDFEC0 /* StatsRectangleView.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
 		F07327202C8505A2006E30A8 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +125,8 @@
 		F07327562C85061F006E30A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F04A950F2DA345A200FDFEC0 /* Progress */,
+				F04A950C2DA32D7100FDFEC0 /* Habits */,
 				F073275B2C850657006E30A8 /* ToDoListView.swift */,
 				F01E19EE2D62E1CC00477213 /* EmptyStateView.swift */,
 				F01E19EA2D62E1A400477213 /* TaskListView.swift */,
@@ -103,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				F07327622C85066C006E30A8 /* Task.swift */,
+				F04A95042DA3236C00FDFEC0 /* Habit.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				F073276B2C85067B006E30A8 /* ToDoListViewModel.swift */,
+				F04A95022DA3231A00FDFEC0 /* HabitsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -201,16 +241,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04A950B2DA32D6900FDFEC0 /* HabitsListView.swift in Sources */,
 				F01E19EF2D62E1CC00477213 /* EmptyStateView.swift in Sources */,
 				F07327792C8519B9006E30A8 /* InputView.swift in Sources */,
 				F073272F2C8505A2006E30A8 /* MinistApp.swift in Sources */,
+				F04A95032DA3231A00FDFEC0 /* HabitsViewModel.swift in Sources */,
 				F07327772C851328006E30A8 /* DateFormatter+Extensions.swift in Sources */,
+				F04A95132DA345F300FDFEC0 /* StatsRectangleView.swift in Sources */,
 				F073275C2C850657006E30A8 /* ToDoListView.swift in Sources */,
+				F04A95092DA32D5700FDFEC0 /* HabitRowView.swift in Sources */,
 				F01E19EB2D62E1A400477213 /* TaskListView.swift in Sources */,
 				F07327702C85067B006E30A8 /* ToDoListViewModel.swift in Sources */,
+				F04A95052DA3236C00FDFEC0 /* Habit.swift in Sources */,
 				F073277F2C862FC2006E30A8 /* FilterMenuView.swift in Sources */,
 				F07327672C85066C006E30A8 /* Task.swift in Sources */,
+				F04A950E2DA32D8C00FDFEC0 /* ProgressView.swift in Sources */,
+				F04A95072DA3247A00FDFEC0 /* HabitsView.swift in Sources */,
 				F01E19ED2D62E1B700477213 /* TaskRowView.swift in Sources */,
+				F04A95112DA345BD00FDFEC0 /* CircularIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

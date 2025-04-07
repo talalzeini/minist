@@ -14,7 +14,7 @@ enum FilterType: Equatable {
 struct FilterMenuView: View {
     @Binding var filter: FilterType
     var isDarkMode: Bool
-
+    
     var body: some View {
         Menu {
             Button(action: { filter = .all }) {
